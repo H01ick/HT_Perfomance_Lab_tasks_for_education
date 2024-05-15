@@ -1,6 +1,6 @@
 import json
 
-def build_structure(data, values, d=[]):
+def build_structure(data, values, d=[]) -> list:
     for test in data:
         for i in values:
             if i.get('id', 'No id') == test['id']:
